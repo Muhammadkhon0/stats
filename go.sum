@@ -1,8 +1,3 @@
-github.com/Muhammadkhon0/bank v0.0.0-20200923152654-b228212db453 h1:hB5kLNmjWnWhzOWMBrQ/5xEV5fuxX1MXgrgvjw1KAoU=
-github.com/Muhammadkhon0/bank v0.0.0-20200923152654-b228212db453/go.mod h1:J2PZuYcSzv7qbTGtwirNSaxbR4ww0gPXhojvyNM0PI0=
-github.com/Muhammadkhon0/bank v0.0.0-20200923154159-aa4f5f717e82 h1:6xx1DQ01+eqQA9/RUurBxX3mYNI00JbhbCO8sCCU53M=
-github.com/Muhammadkhon0/bank v0.0.0-20200923154159-aa4f5f717e82/go.mod h1:J2PZuYcSzv7qbTGtwirNSaxbR4ww0gPXhojvyNM0PI0=
-github.com/Muhammadkhon0/bank v0.0.0-20200923163306-ccfff40da234 h1:gQX+Y+Xjq47hIYHos3iT/R8gPrNiGpaCqJ53KCzjEQ0=
-github.com/Muhammadkhon0/bank v0.0.0-20200923163306-ccfff40da234/go.mod h1:J2PZuYcSzv7qbTGtwirNSaxbR4ww0gPXhojvyNM0PI0=
-github.com/Muhammadkhon0/hw v0.0.0-20200920120548-16bab3e901a8 h1:iJtXxJ53CJxjqwI5EWlyzXt5Mvbqs1LBrucJDfuQlM0=
-github.com/Muhammadkhon0/hw v0.0.0-20200920120548-16bab3e901a8/go.mod h1:kkv/DxDyj8VtTp3p99o0eA0QHJ9GCeQz6CZc9w9pb1g=
+github.com/Muhammadkhon0/bank v1.0.0 h1:BQ6km3o3pJ3niHP63T5ztQ3V4J2wwKRqsfcSKyjADlM=
+github.com/Muhammadkhon0/bank/v2 v2.0.0 h1:pv72LKRFjMPjkIO1mJAS/bjPAgJ4wCkJKr+zPiSaC2g=
+github.com/Muhammadkhon0/bank/v2 v2.0.0/go.mod h1:+m4oAl+eh71JGzlr5MUcHBViXfyPRNRlWcml26YLTYY=

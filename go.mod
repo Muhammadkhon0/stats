@@ -1,5 +1,5 @@
-module github.com/Muhammadkhon0/stats
+module github.com/Muhammadkhon0/stats/v2
 
 go 1.15
 
-require github.com/Muhammadkhon0/bank v0.0.0-20200923163306-ccfff40da234
+require github.com/Muhammadkhon0/bank/v2 v2.0.0
