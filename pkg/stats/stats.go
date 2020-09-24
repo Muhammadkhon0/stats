@@ -4,24 +4,32 @@ import (
 	"github.com/Muhammadkhon0/bank/v2/pkg/types"
 )
 
+
 func Avg(payments []types.Payment) types.Money {
-	var mid types.Money
+	count := len(payments)
+	sum := 0
+
 	for _, payment := range payments {
-		if payment.Status == types.StatusOk{
-			mid += payment.Amount
+		if payment.Status == types.StatusFail {
+			continue
 		}
+		sum += int(payment.Amount)
 	}
-	length := len(payments)
-	mid /= types.Money(length)
-	return mid
+	avg := sum / (count - 1)
+
+	return types.Money(avg)
 }
 
 func TotalInCategory(payments []types.Payment, category types.Category) types.Money {
-	var total types.Money
+	sum := types.Money(0)
+
 	for _, payment := range payments {
-		if payment.Category == category && payment.Status == types.StatusOk{
-			total += payment.Amount
+		if payment.Status == types.StatusFail {
+			continue
+		}
+		if payment.Category == category {
+			sum += payment.Amount
 		}
 	}
-	return total
+	return sum
 }
