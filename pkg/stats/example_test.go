@@ -130,3 +130,47 @@ func TestCategoriesAvg_notFound(t *testing.T) {
 		t.Errorf("want: %v, got: %v", want, got)
 	}
 }
+
+func TestPeriodsDynamic_empty(t *testing.T) {
+	first, second := map[types.Category]types.Money{}, map[types.Category]types.Money{}
+	want := map[types.Category]types.Money{}
+	got := PeriodsDynamic(first, second)
+	if !reflect.DeepEqual(want, got) {
+		t.Errorf("want: %v, got: %v", want, got)
+	}
+}
+func TestPeriodsDynamic_oneParam(t *testing.T) {
+	first, second := map[types.Category]types.Money{
+		"car": 10,
+	}, map[types.Category]types.Money{
+		"food": 5,
+	}
+	want := map[types.Category]types.Money{
+		"car":  -10,
+		"food": 5,
+	}
+	got := PeriodsDynamic(first, second)
+	if !reflect.DeepEqual(want, got) {
+		t.Errorf("want: %v, got: %v", want, got)
+	}
+}
+
+func TestPeriodsDynamic_manyParam(t *testing.T) {
+	first, second := map[types.Category]types.Money{
+		"auto": 10,
+		"food": 20,
+	}, map[types.Category]types.Money{
+		"auto":   10,
+		"food":   25,
+		"mobile": 5,
+	}
+	want := map[types.Category]types.Money{
+		"auto":   0,
+		"food":   5,
+		"mobile": 5,
+	}
+	got := PeriodsDynamic(first, second)
+	if !reflect.DeepEqual(want, got) {
+		t.Errorf("want: %v, got: %v", want, got)
+	}
+}
